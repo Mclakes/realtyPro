@@ -1,0 +1,43 @@
+.sponsor__bottom {
+    background-color: $color-white;
+
+    grid-column: center-start/ center-end;
+
+    padding: 10rem 0 4rem 0;
+
+    &--logos {
+        display: grid;
+        grid-template-columns: repeat(5, 12rem) 5fr; 
+        grid-column-gap: 0rem;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        // justify-items: center;
+
+        img {
+            &:hover {
+                box-shadow: 0 1rem 2rem rgba($color-black, .4);
+                transform: scale(1.25);
+            }
+        }
+
+    }
+
+    &--link {
+
+        border: none;
+        text-decoration: none;
+        height: 1.2rem;
+        // width: 100%;
+        // justify-items: center;
+        cursor: pointer;
+        transition: all;
+
+
+        &:hover {
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: scale(1.15); //translateX(1.5px -1.5px 0);
+        }
+       
+    }
+}

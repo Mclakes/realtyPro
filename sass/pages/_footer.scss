@@ -1,0 +1,80 @@
+.footer {
+    background-color: $color-white;
+    grid-column: center-start / center-end ;
+    color: $color-black;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    justify-items: center;
+
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+
+    &__heading {
+        font-size: 3rem;
+        font-style: bold;
+        margin: 8rem 0 0 0;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+    }
+
+    &__newsletter {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: 2.5rem 14rem 2.5rem 4rem;
+        transform: translateX(5rem);
+        border: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2) ;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 2rem 3rem rgba($color-black, .3);
+        }
+
+        &::placeholder {
+            transform: translateY(4rem);
+        }
+    }
+
+    &__label {
+        transform: translateX( 15rem);        
+    }
+
+    &__button {
+        transform: translateX(-7rem); 
+        padding: 1.8rem;
+        border-radius: 2px;
+    }
+
+    &__bottom {
+        padding: 10rem 0 2rem 0;
+        
+        display: grid;
+        grid-template-columns: min-content min-content;
+        grid-column-gap: 22rem
+    }
+
+    &__copyright--text {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        grid-column-gap: 4rem;
+
+        &s {
+            box-sizing: content-box;
+            border-top: 3px solid rgba($color-primary, .1);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+    }
+
+
+}

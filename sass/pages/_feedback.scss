@@ -1,0 +1,86 @@
+.feedback {
+
+    &__topic {
+        grid-column: center-start / center-end;
+        color: $color-black;
+        padding: 3rem 0;
+    
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    
+    &__feature {
+        background-color: white;
+        color: $color-black;
+        grid-column: center-start / center-end ;
+
+        border-color: rgba($color-black, 0.9);
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        grid-gap: 5rem;
+
+        &s {
+            padding: 3.5rem;
+            // background-color: aqua;
+            box-sizing: content-box;
+            border-color: rgba($color-black, 0.05);
+            border-width: .1rem;
+            border-style: solid;
+
+
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 1.2rem 2.2rem rgba($color-black, 0.4);
+            }
+        
+
+            &--icon {
+                padding-bottom: 2rem;
+            }
+
+            &--paragraph {
+                font-size: 1.2rem;
+                width: 90%;
+                line-height: 1.7rem;
+                padding-bottom: 2rem;                
+            }
+
+            &--bottom {
+                display: grid;
+                grid-template-columns: 15% 85% ;
+                align-content: space-around;
+            }
+            
+            &--img {
+                width: 5rem;
+                height: 5rem;
+                // align-items: sta;
+                justify-content: end;
+                // padding-right: 10rem;
+                border-radius: 100rem;
+            }
+
+            &--info {
+                padding-left: 2rem;
+                line-height: 1.8;
+                transform: translateY(1rem);
+            }
+
+            &--name {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            &--place {
+                font-size: 1.2rem;
+                margin-top: -.9rem;
+            }
+        }
+    }
+}

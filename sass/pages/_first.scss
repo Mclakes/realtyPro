@@ -1,0 +1,215 @@
+.house {
+    grid-column: center-start / center-end ;
+    padding-top: 2rem ;
+
+    display: grid;
+
+    grid-template-rows: 8rem calc(60rem -(2*8rem)) 8rem;
+    grid-template-columns:  1fr 1fr ;
+
+    background-image: linear-gradient(to right,
+     $color-white 0%, 
+     $color-white 70%, 
+     rgba($color-primary, .1) 70%) ;
+
+    
+}
+
+.header {      
+
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    justify-content: space-between;
+
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    &__logo {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        grid-gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+
+        &--img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        &--name {
+            color: rgb(49, 49, 146);
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__navbar {
+            display: grid;
+            grid-template-columns: repeat(7, max-content);
+            justify-content: end;
+            justify-items: center;
+            align-items: center;
+            grid-gap: 5rem;
+            font-size: 1.3rem;
+        
+            &--list {
+                list-style: none;
+                background-color: none;
+
+                
+            }
+
+            &--link {
+                text-decoration: none;
+                // border: none;
+                border-radius: none;  
+                background-color: none;
+                color: $color-black;
+                
+                transition: all;    
+
+                &:hover {
+                    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+                }
+            }
+    
+    }
+}
+
+
+.home {
+    &__story {
+        background-color: $color-white;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        color: $color-black ;
+        font-size: 1.2rem;
+
+        // width: 120%;
+    
+        display: grid;
+        grid-template-columns: 1fr ;
+        // grid-row-gap: 1.2rem;
+        // justify-content: center;
+        // justify-items: start;
+        // align-items: center;
+        // align-content: center;
+        padding: 5rem 0 ;
+        border: 0 7.5rem 0 0 ;
+
+        &--heading {
+            color: rgba(red, .7);
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            font-weight: 600; 
+        }
+
+        &--slogan {
+            color: $color-black;
+            line-height: 6rem;
+            font-size: 5rem;
+            font-weight: 700;
+        }
+
+        &--text {
+            font-size: 1.3rem;
+            line-height: 1.9rem;
+            width: 70%;
+            
+        }
+
+        &--btn {
+            align-self: center;
+            justify-self: start;
+            padding: 2rem 5rem;
+            border: none;
+            border-radius: 2px;
+        }        
+    }
+
+    
+
+    &__img {
+        background-color: inherit;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    
+        // background-image: url(../img/home-intro.jpg);
+        // width: 100%;
+        // height: cover;
+        // background-size: cover;  
+        
+        border: 1.5rem solid transparent;
+        // box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .2);
+
+        &--size {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.sponsor {
+
+    grid-column: 1/-1;
+    grid-row: 3/4;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    // grid-template-columns: repeat(5, 3rem);
+    
+    align-items: center;
+    // justify-items: start;
+    justify-content:stretch;
+    padding-bottom: 3rem;
+    
+
+    line-height: 1;
+
+    
+
+    &__text {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+
+        color: $color-black;
+        font-size: 1.2rem;
+    }
+
+    &__logos {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr) 3fr; 
+        grid-column-gap: 0rem;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        // justify-items: center;
+
+        img {
+            height: 1.2rem;
+        }
+
+    }
+
+    &__link {
+
+        border: none;
+        text-decoration: none;
+        // width: 100%;
+        // justify-items: center;    
+       
+    }
+}
+
+.house__right {
+    grid-column: right-border-start / -1 ;
+    grid-row: 1/2;
+
+    background-color: rgba($color-primary, .1) ;
+
+    color:  rgba($color-primary, .1);
+}
+

@@ -1,0 +1,49 @@
+.reason__topic {
+    background-color: $color-white;
+    grid-column: col-start 1/ col-end 6;
+
+   padding: 1rem 0 5rem 0;
+   
+
+   &--text {
+    color: $color-black;
+    text-transform: none;
+    font-size: 2.3rem;
+   }
+    
+}
+
+.reason__picture {
+    background-color: $color-white;
+    grid-column: col-start 1 / col-end 3 ;
+
+    &--img {
+        height: 100%;
+    }
+
+}
+
+.reason__story {
+    background-color: $color-white;
+    grid-column: col-start 4 / col-end 6 ;
+    width: 60%;
+
+    color: $color-black;
+
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    align-items: stretch;
+
+    // padding-left: 4rem;
+
+    &--heading {
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+        margin-bottom: 1rem;
+    }
+
+    &--paragraph {
+        font-size: 1.2rem;
+        width: 95%;
+    }
+}

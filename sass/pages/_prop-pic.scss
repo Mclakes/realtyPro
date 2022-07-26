@@ -1,0 +1,74 @@
+.prop-pic {
+    background-color: white;
+    // grid-row: 4/5;
+    grid-column: col-start 1/ col-end 6;
+    
+
+
+    &__nav {
+
+        padding-bottom: 3rem;
+
+        &--list {
+            list-style: none;
+            display: inline-block;
+            margin-right: 2rem;
+            font-size: 1.3rem;
+        }
+
+        &--link {
+            text-decoration: none;
+            color: $color-black;
+            padding-bottom: 1rem;
+
+            &:hover {
+                color: $color-primary;
+                border-bottom: 3px solid $color-primary;
+            }
+        }
+    }
+
+    &__feature {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 0;
+
+        text-align: center;
+        grid-gap: 5rem;
+        font-size: 1rem;
+       
+        
+        &--box {
+            width: 100%;
+            display: grid;
+
+            grid-row-gap: 1rem;
+        }
+
+        &--img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--heading {
+            color: $color-black;
+        }
+
+        &--text {
+            color: rgba($color-black,.5);
+
+            &s {
+                background-color: red;
+                display: inline;
+                color: $color-white;
+                margin: 0 .5rem;
+                
+            }
+        }
+        
+        &--btn {
+            display: inline-block;
+        }
+    }
+}
