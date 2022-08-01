@@ -7,11 +7,22 @@
     grid-template-rows: 8rem calc(60rem -(2*8rem)) 8rem;
     grid-template-columns:  1fr 1fr ;
 
-    background-image: linear-gradient(to right,
-     $color-white 0%, 
-     $color-white 70%, 
-     rgba($color-primary, .1) 70%) ;
+    &__home {
+        background-image: linear-gradient(to right,
+        $color-white 0%, 
+         $color-white 70%, 
+        rgba($color-primary, .1) 70%) ;
+    }
 
+    &__properties {
+        background-color: transparent;
+        grid-row: 1/2;
+    }
+
+    &__contact {
+        background-color: transparent;
+        grid-row: 1/2;
+    }
     
 }
 
@@ -37,9 +48,20 @@
         }
 
         &--name {
-            color: rgb(49, 49, 146);
-            font-weight: 400;
-            font-size: 1.2rem;
+            font-weight: 1000;
+            font-size: 1.5rem;
+
+            &-home {
+                color: rgb(49, 49, 146);  
+            }
+
+            &-properties {
+                color: $color-white;
+            }
+
+            &-contact {
+                color: $color-black;
+            }
         }
     }
 
@@ -55,8 +77,6 @@
             &--list {
                 list-style: none;
                 background-color: none;
-
-                
             }
 
             &--link {
@@ -67,6 +87,21 @@
                 color: $color-black;
                 
                 transition: all;    
+
+                &-p {
+                    text-decoration: none;
+                    // border: none;
+                    border-radius: none;  
+                    background-color: none;
+                    color: $color-white;
+                    
+                    transition: all;
+
+                    &:hover {
+                        box-shadow: 0 1rem 2rem rgba($color-black, .4);
+                    }  
+      
+                }
 
                 &:hover {
                     box-shadow: 0 1rem 2rem rgba($color-black, .4);

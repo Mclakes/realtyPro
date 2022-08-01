@@ -45,9 +45,11 @@ body {
 
     display: grid;
 
-    grid-template-rows: 10rem repeat(6, min-content);
+    grid-template-rows: 55rem repeat(6, min-content);
 
     grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end right-border-start] 10rem [right-border-end] ;
+
+    padding: 1rem;
 }
 
 .container-contact-us {
@@ -55,7 +57,7 @@ body {
 
     display: grid;
 
-    grid-template-rows: 10rem repeat(6, min-content);
+    grid-template-rows: 45rem repeat(6, min-content);
 
     // grid-template-rows: 10rem min-content min-content;
     grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end right-border-start] 10rem [right-border-end] ;

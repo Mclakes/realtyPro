@@ -27,12 +27,13 @@ body {
 
 .container-properties {
   display: grid;
-  grid-template-rows: 10rem repeat(6, min-content);
-  grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end]) [center-end right-border-start] 10rem [right-border-end]; }
+  grid-template-rows: 55rem repeat(6, min-content);
+  grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end]) [center-end right-border-start] 10rem [right-border-end];
+  padding: 1rem; }
 
 .container-contact-us {
   display: grid;
-  grid-template-rows: 10rem repeat(6, min-content);
+  grid-template-rows: 45rem repeat(6, min-content);
   grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end]) [center-end right-border-start] 10rem [right-border-end]; }
 
 .mg-sm {
@@ -248,8 +249,15 @@ body {
   padding-top: 2rem;
   display: grid;
   grid-template-rows: 8rem calc(60rem -(2*8rem)) 8rem;
-  grid-template-columns: 1fr 1fr;
-  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 70%, rgba(50, 191, 111, 0.1) 70%); }
+  grid-template-columns: 1fr 1fr; }
+  .house__home {
+    background-image: linear-gradient(to right, #ffffff 0%, #ffffff 70%, rgba(50, 191, 111, 0.1) 70%); }
+  .house__properties {
+    background-color: transparent;
+    grid-row: 1/2; }
+  .house__contact {
+    background-color: transparent;
+    grid-row: 1/2; }
 
 .header {
   display: grid;
@@ -267,9 +275,14 @@ body {
       width: 2.5rem;
       height: 2.5rem; }
     .header__logo--name {
-      color: #313192;
-      font-weight: 400;
-      font-size: 1.2rem; }
+      font-weight: 1000;
+      font-size: 1.5rem; }
+      .header__logo--name-home {
+        color: #313192; }
+      .header__logo--name-properties {
+        color: #ffffff; }
+      .header__logo--name-contact {
+        color: rgba(0, 0, 0, 0.7); }
   .header__navbar {
     display: grid;
     grid-template-columns: repeat(7, max-content);
@@ -287,6 +300,14 @@ body {
       background-color: none;
       color: rgba(0, 0, 0, 0.7);
       transition: all; }
+      .header__navbar--link-p {
+        text-decoration: none;
+        border-radius: none;
+        background-color: none;
+        color: #ffffff;
+        transition: all; }
+        .header__navbar--link-p:hover {
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
       .header__navbar--link:hover {
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
 
@@ -393,7 +414,9 @@ body {
       outline: none;
       box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
     .footer__input::placeholder {
-      transform: translateY(4rem); }
+      transform: translateY(4rem);
+      font-size: 1rem;
+      font-weight: lighter; }
   .footer__label {
     transform: translateX(15rem); }
   .footer__button {
@@ -512,6 +535,43 @@ body {
         margin: 0 .5rem; }
     .prop-pic__feature--btn {
       display: inline-block; }
+
+.house__background {
+  grid-row: 1/2;
+  grid-column: left-border-start/ right-border-end; }
+  .house__background--properties {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/properties-background.png);
+    object-fit: center;
+    background-position: center; }
+  .house__background--contact {
+    background-color: #E1F0E8; }
+
+.properties {
+  display: grid;
+  grid-row-gap: 2rem;
+  align-content: center; }
+  .properties__heading {
+    color: #32bf6f;
+    font-size: 1.5rem; }
+  .properties__bold {
+    color: #ffffff;
+    font-size: 4rem; }
+  .properties__text {
+    color: #ffffff;
+    width: 40%;
+    font-size: 0.9rem; }
+  .properties__input {
+    font-size: 1.5rem;
+    width: 25rem;
+    padding: 1.2rem;
+    border: none; }
+  .properties__btn {
+    font-size: 1.2rem;
+    padding: 1.3rem;
+    border-radius: 2px;
+    transform: translate(-2px, -3px); }
+  .properties__deals {
+    padding-top: 10rem; }
 
 .reason__topic {
   background-color: #ffffff;

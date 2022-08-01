@@ -1,0 +1,74 @@
+.house {
+
+    
+
+    &__background {     
+
+        grid-row: 1/2;
+        grid-column: left-border-start/ right-border-end;
+
+        &--properties {
+            background-image: 
+            linear-gradient(
+                to right bottom,
+                 rgba($color-black, 0.15), 
+                 rgba($color-black, 0.15)),
+            url(../img/properties-background.png);
+            object-fit: center;
+            background-position: center;
+        }
+        
+        &--contact {            
+            background-color: #E1F0E8;
+        }
+    }
+
+}
+
+.properties {
+    display: grid;
+
+    grid-row-gap: 2rem;
+    // align-items: center;
+    align-content: center;
+
+    &__heading {
+        color: $color-primary;
+        font-size: 1.5rem;
+    }
+
+    &__bold {
+        color: $color-white;
+        font-size: 4rem;
+    }
+
+    &__text {
+        color: $color-white;
+        width: 40%;
+        font-size: 0.9rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        width: 25rem;
+        padding: 1.2rem ;
+        border: none;
+    }
+
+    &__btn {
+        font-size: 1.2rem; 
+        // padding: 1.2rem ;
+        
+        padding: 1.3rem;
+        border-radius: 2px;
+        transform: translate(-2px, -3px);
+    }
+
+
+    &__deals {
+        padding-top: 10rem;
+    }
+
+
+
+}
