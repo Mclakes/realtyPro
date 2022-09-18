@@ -78,7 +78,34 @@
 //     }
 // }
 
-// .mb-sm { margin-bottom: 2rem;}
-// .mb-md { margin-bottom: 3rem;}
-// .mb-lg { margin-bottom: 6rem;}
-// .mb-hg { margin-bottom: 8rem;}
+.ml-1 { margin-left: 1rem; box-sizing: border-box;}
+.ml-2 { margin-left: 2rem; box-sizing: border-box;}
+.ml-3 { margin-left: 3rem; box-sizing: border-box;}
+.ml-4 { margin-left: 4rem; box-sizing: border-box;}
+
+// i {
+//     width: 100%;
+//     height: auto;
+// }
+
+// .icon {
+//     width: 100px;
+//     height: 100px;
+//     color: white;
+//     border: 2px solid red;
+// }
+
+.arrow {
+    border: 2px solid red;
+}
+
+.icon__dot {
+    font-size: 2rem;
+    color: $color-primary;
+    padding-top: .2rem;
+}
+
+.icon__star {
+    color: #E84B3B;
+
+}

@@ -30,6 +30,11 @@
 
     color: $color-black;
 
+    &--icon {
+        // border-right: 6rem;
+        border: 2px solid right;
+    }
+
     display: grid;
     grid-template-columns: 3rem 1fr;
     align-items: stretch;

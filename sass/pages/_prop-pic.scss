@@ -34,7 +34,7 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 2rem 0;
 
-        text-align: center;
+        text-align: left;
         grid-gap: 5rem;
         font-size: 1rem;
        
@@ -53,15 +53,17 @@
 
         &--heading {
             color: $color-black;
+            font-size: 1.7rem;
         }
 
         &--text {
             color: rgba($color-black,.5);
 
             &s {
-                background-color: red;
+                background-color: #d2d2d2;
+                padding: .4rem;
                 display: inline;
-                color: $color-white;
+                color: rgba($color-black, .4);
                 margin: 0 .5rem;
                 
             }
